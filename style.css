@@ -1,0 +1,160 @@
+*{
+  padding:0px;
+  margin:0px;
+  border:0px;
+}
+
+body{
+  margin:0px;  
+  padding:0px;
+}
+
+header{
+  position:absolute;
+  width:100%;
+  height:35px;
+  background: rgba(78, 195, 224, 0.5);
+}
+
+nav{
+  position:absolute;
+  right:100px;
+}
+
+ul{
+  background:none;
+  display: inline-block;
+}
+
+li{
+  display:inline-block;
+  margin-left:40px;
+  font-family: 'Noto Sans', sans-serif;
+  color:(black);
+  }
+
+a{
+  font-size: 12px;
+}
+
+.logo{
+  position: absolute;
+  height:25px;
+  width:23px;
+  margin-top: 5px;
+  margin-left:10px;    
+}
+
+#location_divider{
+  position:absolute;
+  background: rgba(0, 0, 0, 0.5);
+  top:5px;
+  left:50px;
+  height:25px;
+  width:2px;
+  z-index: 5;
+}
+
+#location_text{
+  position:absolute;
+  top:8px;
+  left:62px;
+  z-index: 5; 
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+.dropbtn {
+  color: black;
+  font-size: 16px;
+  border: none;
+  height:35px;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: underline solid transparent;
+  text-underline-offset: 3px;  
+  transition: text-decoration 1s ease;
+}
+
+.drop {
+  position:relative;
+  display:inline-block;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+  font-size: 12px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  }
+
+.drop-content a {
+  color: rgb(133, 28, 28);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+
+#bg{
+ position: relative;
+ width: 100vw;
+ height: 100vh;
+ opacity: 75%;
+ z-index:-1;
+}
+
+
+/*this is hoverable options*/
+
+.drop-content a:hover {
+  background-color: rgb(167, 80, 80); cursor: pointer;}
+.drop:hover .drop-content {
+  display: block;}
+.drop:hover .dropbtn {
+  background-color: #00000000;
+  text-decoration: underline solid Currentcolor;
+}
+
+.test{
+  background:rgba(0, 0, 0, 0);
+  height:60%;
+  width:20%;
+  border: 1px solid #000000;
+  margin: 0px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.option, .option img {width: 100%; height: 100%;}
+
+.option{
+  overflow: hidden;
+  position:absolute;
+  transform: skewX(-55.98deg);
+}
+
+.option:first-child{
+  transform-origin: 100% 0;
+}
+
+.option:last-child {
+  transform-origin: 0 100%;
+}
+
+.option img{
+  transform:skewX(55.98deg);
+  transform-origin: inherit;
+}
+
+.mother{
+  background:rgb(163, 126, 126);
+  height:100vh;
+  display: flex;
+  flex-direction: row;
+
+}
